@@ -1,6 +1,7 @@
 ### Typographic!
 
 Pertinent links:
+
 https://github.com/corysimmons/typographic
 http://corysimmons.github.io/typographic/
 http://madebymike.com.au/writing/precise-control-responsive-typography/
