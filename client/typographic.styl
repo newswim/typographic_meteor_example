@@ -1,0 +1,83 @@
+// /* CSS declarations go here */
+//
+// @import 'kouto-swiss'
+// @import 'typographic'
+// typographic()
+// $a = 15px
+// html
+//     grid-overlay(blue, 2)
+// .container
+//     background-color pink
+//     width 50%
+//     margin auto auto
+//     font-size $a
+//     // font-family $futura
+
+
+@import '../typographic'
+
+typographic()
+
+
+*
+  box-sizing: border-box
+
+html
+  padding: vr-block(3)
+  text-align: center
+  @media (max-width: 800px)
+    text-align: left
+
+.logo
+  height: vr-block(2)
+  margin-bottom: vr-block(2)
+  display: inline-block
+  box-shadow: 0 0 30px 20px white
+  background: white
+  border-radius: 999em
+  padding: 0 30px
+  img
+    height: vr-block(2)
+
+.wrap
+  max-width: 980px
+  margin: auto
+  text-align: left
+
+body
+  margin: 0
+
+grid-overlay(blue)
+
+img
+  display: block
+
+.img-left
+  float: left
+  margin-right: vr-block()
+  border-radius: 999em
+  &.vr-block
+    height: vr-block(5.25)
+    margin-bottom: vr-block(.25)
+
+
+.launchbox-link
+  position: fixed
+  bottom: 0
+  right: 0
+  background: #333
+  padding: 18px 35px 10px
+  transition: all .25s ease
+  border-radius: 10px 0 0 0
+  img
+    display: block
+    height: 40px
+  &:hover
+    background: dodgerblue
+  &:active
+    background: darken(dodgerblue, 10%)
+  @media (max-width: $min-width)
+    border-radius: 6px 0 0 0
+    padding: 13px 23px 6px
+    img
+      height: 25px
